@@ -1,0 +1,132 @@
+
+@mixin bgcolor($bgcClor) {
+  background-color: $bgColor;
+}
+
+@mixin textStyles($size, $color) {
+  color: $color;
+  font-size: $size;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+}
+.dropdown .dropdown-menu{
+  background-color: #f08080;
+  border: 5px #ffffff double;
+  border-radius: 5px;
+}
+
+.dropdown .dropdown-menu>a{
+  color: #ffffff;
+}
+.dropdown .dropdown-menu>a:hover{
+  color: #003F3F;
+}
+.Header
+{
+  background-color: #d9534f;
+  color: #003F3F;
+  border-left: 5px #ffffff double ;
+  border-right: 5px #ffffff double;
+  border-radius: 5px;
+  //box-shadow:5px 5px rgba(240, 128, 128, 0.685);
+  //box-shadow:5px 5px rgba(240, 128, 128, 0.685);
+  box-shadow: 3px 3px gray, -1em 0 .4em rgba(240, 128, 128, 0.685);
+  
+}
+.solidbg{
+  background-color: rgba(0, 63, 63, 0.684);
+  padding: 25px;
+}
+
+#bdTop{
+  border-top: 5px #ffffff double;
+  border-bottom: 5px #ffffff double;
+  color:rgb(228, 216, 216);
+}
+#bdBottom{
+  border-bottom: 5px #ffffff double;
+}
+
+.boxSize{
+  height: 75px;
+}
+
+.searchbar{
+  padding:10px;
+  float: none;
+  position:relative;
+  top:50px;
+}
+.searchbarText{
+  @include textStyles(30px,hsl(180, 89%, 18%))
+}
+
+.member-header {
+  background-color: blue;
+  color: white;
+}
+
+.member-body {
+  background-color: lightblue;
+}
+
+.member2-header {
+  background-color: green;
+  color: white;
+}
+
+.member2-body {
+  background-color: lightgreen;
+}
+
+.member3-header {
+  background-color: orange;
+  color: white;
+}
+
+.member3-body {
+  background-color: lightorange;
+}
+
+.member4-header {
+  background-color: purple;
+  color: white;
+}
+
+.member4-body {
+  background-color: lavender;
+}
+
+.member5-header {
+  background-color: red;
+  color: white;
+}
+
+.member5-body {
+  background-color: pink;
+}
+.title-container {
+  background-color: #003F3F;
+  padding: 40px;
+  text-align: center;
+}
+
+.title {
+  font-size: 30px;
+  color: #fff;
+  margin: 0;
+  margin-top: 15px;
+  text-decoration: underline;
+}
+
+#bginfo{
+  background-color: #003F3F;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+
